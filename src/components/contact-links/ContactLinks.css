@@ -1,0 +1,52 @@
+.contact-links-container {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+  
+  .contact-intro-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .contact-label {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contact-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    color: #a76e60; /* Change to your brand color */
+  }
+  

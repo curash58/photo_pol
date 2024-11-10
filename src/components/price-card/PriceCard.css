@@ -1,0 +1,68 @@
+.price-card {
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: hidden;
+    /* Ensure the rounded corners apply to both sections */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styling for the colored header section */
+.price-card-header {
+    padding: 20px;
+    /* border-bottom: 1px solid #ddd; */
+    /* Optional: Separate the sections with a border */
+}
+
+/* General styling for the card title and text */
+.format-text {
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+}
+
+.price-card-title {
+    font-size: 2rem !important;
+    font-family: 'Merriweather', serif;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+}
+
+.price-card-price {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem !important;
+    color: #444 !important;
+}
+
+/* .price {
+    display: flex;
+    align-items: center;
+    margin: auto;
+} */
+
+/* Styling for the transparent body section */
+.price-card-body {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.price-card-includes-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.price-card-features {
+    list-style: none;
+    color: #555;
+    font-size: 1.2rem;
+    padding-left: 0 !important;
+}
+
+.feature-item {
+    margin-bottom: 25px;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}

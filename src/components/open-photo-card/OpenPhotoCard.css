@@ -1,0 +1,60 @@
+/* OpenPhotoCard.css */
+.open-photo-card {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.open-photo-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.open-photo-description {
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Container for the three columns */
+.open-photo-images {
+  display: flex;
+  gap: 20px; /* Space between columns */
+  justify-content: center;
+}
+
+.open-photo-column {
+  flex: 1; /* Make each column equal width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images in a column */
+}
+
+.open-photo-image {
+  width: 100%;
+  object-fit: cover; /* Ensure images cover their container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff4c4c;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .open-photo-images {
+    flex-direction: column; /* Stack columns vertically on mobile */
+    gap: 5px; /* Reduce space between images */
+  }
+
+  .open-photo-card {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+}

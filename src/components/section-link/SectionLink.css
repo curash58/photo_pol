@@ -1,0 +1,29 @@
+/* Container styling */
+.section-link-container {
+    margin-top: 50px;
+    padding: 40px 20px; /* Add padding for top and sides */
+    background-color: rgb(249, 249, 249, 0); /* Optional: light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  /* Title styling */
+  .section-link-title {
+    font-size: 2rem;
+    color: #333;
+    font-family: 'Merriweather', serif;
+  }
+  
+  /* Link item styling */
+  .link-item {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', serif;
+    color: #a76e60;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: normal;
+  }
+  
+  .link-item:hover {
+    color: #8a5c50; /* Change color on hover */
+  }
+  

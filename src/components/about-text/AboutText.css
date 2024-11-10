@@ -1,0 +1,40 @@
+.about-text-container {
+    padding: 60px 20px;
+  }
+  
+  .about-text-left {
+    font-family: 'Montserrat', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .quote-text {
+    font-size: 2.5rem;
+    color: #333;
+    line-height: 1.3;
+  }
+  
+  .author-text {
+    font-size: 1rem;
+    color: #aaa;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  
+  .about-text-right {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .website-link {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  

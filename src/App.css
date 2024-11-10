@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  /* Задаем минимальную высоту для всей страницы */
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  /* background-color: rgb(204, 175, 62); */
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/milestone-logistics-5e067.appspot.com/o/images%2Fphoto_2024-10-29%206.35.37%E2%80%AFPM.jpeg?alt=media&token=457d536f-4bd5-4745-9965-8a8c5f4bd28b'); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/public/assets/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+}
+
+p {
+  font-family: 'Montserrat', serif;
 }

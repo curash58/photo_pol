@@ -1,0 +1,10 @@
+.section-price-container {
+    padding: 40px 20px; /* Add some padding around the section */
+  }
+  
+  @media (max-width: 768px) {
+    .section-price-container {
+      padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  

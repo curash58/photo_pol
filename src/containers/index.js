@@ -1,0 +1,9 @@
+export { default as Home } from './home/Home';
+export { default as Portfolio } from './portfolio/Portfolio';
+export { default as Price } from './price/Price';
+export { default as HowWork } from './how-work/HowWork';
+export { default as About } from './about/About';
+export { default as Contacts } from './contacts/Contacts';
+export { default as Admin } from './admin/Admin';
+export { default as Login } from './login/Login';
+export { default as NotFound } from './not-found/NotFound';

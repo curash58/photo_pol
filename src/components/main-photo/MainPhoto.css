@@ -1,0 +1,28 @@
+/* Main container for the photo */
+.main-photo-container {
+    margin: 0; /* Remove default margin */
+    padding: 0 !important; /* Remove default padding */
+    width: 100vw; /* Full viewport width */
+    height: 350px; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow from the image */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  /* Image styling with fade-in animation */
+  .main-photo {
+    width: 100%; /* Make the image stretch to full width */
+    height: 100%; /* Make the image stretch to full height */
+    object-fit: cover; /* Cover the entire container, cropping if necessary */
+    opacity: 0; /* Start with the image being invisible */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation */
+  }
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* End with the image fully visible */
+    }
+  }
+  

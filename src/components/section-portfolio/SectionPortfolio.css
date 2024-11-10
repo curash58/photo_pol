@@ -1,0 +1,36 @@
+/* Main container for the portfolio section */
+.portfolio-section {
+  width: 100vw;
+  /* Full viewport width */
+  height: 450px;
+  /* Fixed height */
+  background-image: url('../../../public/assets/img/the-path-7631282_1280.jpg');
+  /* Replace with your photo path */
+  background-size: cover;
+  /* Cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  display: flex;
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  cursor: pointer;
+  /* Pointer cursor to indicate clickable */
+  transition: opacity 0.3s ease;
+  /* Optional: smooth opacity change on hover */
+}
+
+/* Text styling for the title */
+.portfolio-text {
+  color: #fff;
+  /* Dark text color */
+  font-size: 2.5rem;
+  /* Large font size */
+  font-family: 'Merriweather', serif;
+  /* Elegant serif font */
+  font-weight: bold;
+  /* Bold text */
+}

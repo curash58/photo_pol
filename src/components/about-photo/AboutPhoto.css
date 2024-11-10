@@ -1,0 +1,20 @@
+.about-photo-container {
+    width: 100%;
+    height: 350px; /* Set the height of the photo */
+    background-size: cover; /* Make sure the image covers the whole area */
+    background-position: center; /* Center the image */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-photo-text {
+    color: white; /* White text color */
+    font-size: 2rem; /* Adjust the font size */
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow for better readability */
+    text-align: center; /* Center the text */
+  }
+  

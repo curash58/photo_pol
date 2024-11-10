@@ -1,0 +1,72 @@
+/* Container styling */
+.section-about-container {
+    text-align: center;
+    /* Center the text */
+    padding: 50px 150px !important;
+    /* Add padding for spacing */
+    background-color: rgba(255, 255, 255, 0);
+    /* White background */
+}
+
+/* Subtitle styling */
+.about-subtitle {
+    font-size: 1rem;
+    color: #beb3b3;
+    /* Light gray color */
+    margin-bottom: 10px;
+    /* Space below the subtitle */
+    /* font-family: 'Georgia', serif; */
+    /* Elegant serif font */
+    letter-spacing: 1px;
+    /* Add spacing between letters */
+}
+
+/* Main text styling */
+.about-text {
+    font-size: 1.5rem;
+    color: #333;
+    /* Dark text color */
+    line-height: 1.6;
+    /* Increase line spacing for readability */
+    margin-bottom: 20px;
+    /* Space between paragraphs */
+    /* font-family: 'Georgia', serif; */
+    /* Elegant serif font */
+}
+
+/* Button styling */
+.about-button {
+    font-size: 1rem;
+    color: #333 !important;
+    /* White text color */
+    background-color: rgba(255, 255, 255, 0) !important;
+    /* Dark background color */
+    border: 2px solid #333 !important;
+    border-radius: 0% !important;
+    /* Border matching the background */
+    padding: 10px 20px;
+    /* Button padding */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-weight: bold;
+    /* Bold text */
+    transition: all 0.3s ease;
+    /* Smooth transition effect */
+}
+
+/* Button hover effect */
+.about-button:hover {
+    color: rgba(255, 255, 255) !important;
+    /* Dark text color */
+    background-color: #a76e60 !important;
+    /* White background color */
+    border: 2px solid #333;
+    /* Border remains the same */
+}
+
+
+@media (max-width: 576px) {
+    .section-about-container {
+        padding: 50px 20px !important;
+    }
+}
