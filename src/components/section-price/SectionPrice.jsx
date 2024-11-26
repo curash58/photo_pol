@@ -27,7 +27,7 @@ const SectionPrice = () => {
   }, []);
 
   return (
-    <Container className="section-price-container">
+    <Container className="section-price-container mt-5">
       <Row className="justify-content-center">
         {priceCards.map((card) => (
           <Col key={card.id} md={6} className="mb-4">

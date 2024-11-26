@@ -7,8 +7,8 @@ const Home = () => {
       <MainPhoto />
       <SectionAbout />
       <SectionPortfolio />
-      <SectionPrice />
       <MainCategories />
+      <SectionPrice />
       <SectionLink />
     </>
   );

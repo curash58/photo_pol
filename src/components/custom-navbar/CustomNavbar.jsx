@@ -54,7 +54,7 @@ const CustomNavbar = () => {
         <Nav className="mx-auto" onClick={handleLinkClick}>
           <Nav.Link href="/">ГЛАВНАЯ</Nav.Link>
           <Nav.Link href="/portfolio">ПОРТФОЛИО</Nav.Link>
-          <Nav.Link href="/price">ИНФО</Nav.Link>
+          <Nav.Link href="/price">ЦЕНЫ</Nav.Link>
           <Nav.Link href="/about">ОБ АВТОРЕ</Nav.Link>
           <Nav.Link href="/contacts">КОНТАКТЫ</Nav.Link>
           {/* Render Админ link only for authenticated users */}

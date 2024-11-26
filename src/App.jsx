@@ -17,7 +17,7 @@ function App() {
           <Route path="/price" element={<Price />} />
           <Route path="/how-work" element={<HowWork />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/kkkllljjj" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/portfolio/:id" element={<OpenPhotoCard />} />
