@@ -21,18 +21,18 @@ const SectionLink = () => {
         <Col xs={12} md={8} className="mb-3">
           {/* Telegram Link */}
           <a
-            href="https://t.me/pollliiiiinAAAaaa"
+            href="https://t.me/poliiiiiiinaaa"
             target="_blank"
             rel="noopener noreferrer"
             className="link-item"
           >
-            TG канал: @pollliiiiinAAAaaa
+            Telegram: @poliiiiiiinaaa
           </a>
         </Col>
         <Col xs={12} md={8}>
           {/* Email Link */}
-          <a href="mailto:wapokd@djawj.awd" className="link-item">
-            Email: wapokd@djawj.awd
+          <a href="mailto:ph.polinapavlova@yandex.ru" className="link-item">
+            Email: ph.polinapavlova@yandex.ru
           </a>
         </Col>
       </Row>

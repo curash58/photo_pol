@@ -7,12 +7,12 @@ const ContactLinks = () => {
       <p className="contact-intro-text">
         Я всегда открыта новым предложениям и неожиданным путешествиям. Если у вас есть идея по фотосъемке — свадебной, лав-стори, портретной — напишите мне. <br />
         Я буду рада воплотить самую сумасшедшую идею.
-      </p>
+      </p>      
       <div className="contact-details">
         <div className="contact-item">
           <h5 className="contact-label">E-mail</h5>
           <p className="contact-info">
-            <a href="mailto:wapokd@djawj.awd" className="contact-link">wapokd@djawj.awd</a>
+            <a href="mailto:ph.polinapavlova@yandex.ru" className="contact-link">ph.polinapavlova@yandex.ru</a>
           </p>
         </div>
         <div className="contact-item">
@@ -30,7 +30,7 @@ const ContactLinks = () => {
         <div className="contact-item">
           <h5 className="contact-label">Telegram</h5>
           <p className="contact-info">
-            <a href="https://t.me/pollliiiiinAAAaaa" className="contact-link" target="_blank" rel="noopener noreferrer">@pollliiiiinAAAaaa</a>
+            <a href="https://t.me/poliiiiiiinaaa" className="contact-link" target="_blank" rel="noopener noreferrer">@poliiiiiiinaaa</a>
           </p>
         </div>
       </div>
