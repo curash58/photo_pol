@@ -16,7 +16,7 @@ const Footer = () => {
           <Col xs={12} md={4} className="mb-3 mb-md-0">
             <div className="footer-social-icons">
               <a
-                href="https://www.instagram.com/instannelly"
+                href="https://www.instagram.com/poliiiiinnaaa/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
@@ -24,14 +24,14 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://t.me/awdjjadw"
+                href="https://t.me/poliiiiiiinaaa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
               >
                 <FaTelegramPlane />
               </a>
-              <a href="mailto:wapokd@djawj.awd" className="social-icon">
+              <a href="mailto:ph.polinapavlova@yandex.ru" className="social-icon">
                 <FaEnvelope />
               </a>
             </div>
@@ -45,12 +45,12 @@ const Footer = () => {
             </Button>
           </Col>
         </Row>
-        <Row className="mt-4 text-center">
+        {/* <Row className="mt-4 text-center">
           <Col>
             <a href="/privacy-policy" className="footer-link">Privacy Policy</a> |{' '}
             <a href="/terms-of-service" className="footer-link">Terms of Service</a>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </footer>
   );

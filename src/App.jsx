@@ -21,13 +21,6 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/portfolio/:id" element={<OpenPhotoCard />} />
-          {/* <Route path="/blog" element={<Blog />} />
-          <Route path="/blog-open-card/:id" element={<BlogOpenCard />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/admin-panel" element={<AdminPanel />} />
-          <Route path="/login" element={<Login />} /> */}
         </Routes>
       </div>
       <Footer />

@@ -51,6 +51,19 @@ const ContactLinks = () => {
         Запись осуществляется через директ в инстаграм, либо через телеграмм.
         Ниже представлен календарь, где показаны свободные даты 🤎📸
       </p>
+      <div className="calendar-container">
+        <h5 className="calendar-label">Свободные даты:</h5>
+        <Calendar
+          onChange={setDate}
+          value={date}
+          className="custom-calendar"
+          tileClassName={({ date, view }) =>
+            view === "month" && isAvailable(date) ? "available-date" : "unavailable-date"
+          }
+          tileDisabled={({ date }) => !isAvailable(date)}
+        />
+      </div>
+
       <div className="contact-details">
         <div className="contact-item">
           <h5 className="contact-label">Instagram</h5>
@@ -79,18 +92,7 @@ const ContactLinks = () => {
           </p>
         </div>
       </div>
-      <div className="calendar-container">
-        <h5 className="calendar-label">Свободные даты:</h5>
-        <Calendar
-          onChange={setDate}
-          value={date}
-          className="custom-calendar"
-          tileClassName={({ date, view }) =>
-            view === "month" && isAvailable(date) ? "available-date" : "unavailable-date"
-          }
-          tileDisabled={({ date }) => !isAvailable(date)}
-        />
-      </div>
+      
     </div>
   );
 };
