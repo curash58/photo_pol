@@ -13,7 +13,9 @@ const ContactLinks = () => {
   useEffect(() => {
     const fetchAvailableDates = async () => {
       try {
-        const querySnapshot = await getDocs(collection(firestore, "availableDates"));
+        const querySnapshot = await getDocs(
+          collection(firestore, "availableDates")
+        );
         const dates = querySnapshot.docs.map((doc) => {
           const [year, month, day] = doc.data().date.split("-").map(Number);
           return new Date(year, month - 1, day);
@@ -53,12 +55,28 @@ const ContactLinks = () => {
       </p>
       <div className="calendar-container">
         <h5 className="calendar-label">Свободные даты:</h5>
+        <div className="example-dates mb-3">
+          <div className="example-item">
+            <span className="example-date available-date"></span>
+            <span className="example-text">Свободная дата 
+              <img className="example-date-img" src="./assets/img/11.png" alt="" />
+            </span>
+          </div>
+          <div className="example-item">
+            <span className="example-date unavailable-date"></span>
+            <span className="example-text">Занятая дата 
+            <img className="example-date-img" src="./assets/img/4.png" alt="" />
+            </span>
+          </div>
+        </div>
         <Calendar
           onChange={setDate}
           value={date}
           className="custom-calendar"
           tileClassName={({ date, view }) =>
-            view === "month" && isAvailable(date) ? "available-date" : "unavailable-date"
+            view === "month" && isAvailable(date)
+              ? "available-date"
+              : "unavailable-date"
           }
           tileDisabled={({ date }) => !isAvailable(date)}
         />
@@ -92,7 +110,6 @@ const ContactLinks = () => {
           </p>
         </div>
       </div>
-      
     </div>
   );
 };
