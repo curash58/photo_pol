@@ -1,41 +1,98 @@
-import React from 'react';
-import './ContactLinks.css'; // Import custom CSS
+import React, { useState, useEffect } from "react";
+import Calendar from "react-calendar";
+import { collection, getDocs } from "firebase/firestore";
+import { firestore } from "../../firebaseConfig"; // Update the path as per your project structure
+import "./ContactLinks.css";
+import "react-calendar/dist/Calendar.css";
 
 const ContactLinks = () => {
+  const [date, setDate] = useState(new Date());
+  const [availableDates, setAvailableDates] = useState([]);
+
+  // Fetch available dates from Firebase Firestore
+  useEffect(() => {
+    const fetchAvailableDates = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(firestore, "availableDates"));
+        const dates = querySnapshot.docs.map((doc) => {
+          const [year, month, day] = doc.data().date.split("-").map(Number);
+          return new Date(year, month - 1, day);
+        });
+        setAvailableDates(dates);
+      } catch (error) {
+        console.error("Error fetching available dates:", error);
+      }
+    };
+
+    fetchAvailableDates();
+  }, []);
+
+  const isPastDate = (date) => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return date < today;
+  };
+
+  const isAvailable = (date) => {
+    if (isPastDate(date)) {
+      return false;
+    }
+    return availableDates.some(
+      (availableDate) =>
+        availableDate.getFullYear() === date.getFullYear() &&
+        availableDate.getMonth() === date.getMonth() &&
+        availableDate.getDate() === date.getDate()
+    );
+  };
+
   return (
     <div className="contact-links-container">
       <p className="contact-intro-text">
-        Я всегда открыта новым предложениям и неожиданным путешествиям. Если у вас есть идея по фотосъемке — свадебной, лав-стори, портретной — напишите мне. <br />
-        Я буду рада воплотить самую сумасшедшую идею.
-      </p>      
+        Запись осуществляется через директ в инстаграм, либо через телеграмм.
+        Ниже представлен календарь, где показаны свободные даты 🤎📸
+      </p>
       <div className="contact-details">
-        <div className="contact-item">
-          <h5 className="contact-label">E-mail</h5>
-          <p className="contact-info">
-            <a href="mailto:ph.polinapavlova@yandex.ru" className="contact-link">ph.polinapavlova@yandex.ru</a>
-          </p>
-        </div>
-        <div className="contact-item">
-          <h5 className="contact-label">Телефон</h5>
-          <p className="contact-info">
-            <a href="tel:+79131023358" className="contact-link">+7 913 102 33 58</a>
-          </p>
-        </div>
         <div className="contact-item">
           <h5 className="contact-label">Instagram</h5>
           <p className="contact-info">
-            <a href="https://instagram.com/poliiiiinnaaa" className="contact-link" target="_blank" rel="noopener noreferrer">@poliiiiinnaaa</a>
+            <a
+              href="https://instagram.com/poliiiiinnaaa"
+              className="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @poliiiiinnaaa
+            </a>
           </p>
         </div>
         <div className="contact-item">
           <h5 className="contact-label">Telegram</h5>
           <p className="contact-info">
-            <a href="https://t.me/poliiiiiiinaaa" className="contact-link" target="_blank" rel="noopener noreferrer">@poliiiiiiinaaa</a>
+            <a
+              href="https://t.me/poliiiiiiinaaa"
+              className="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @poliiiiiiinaaa
+            </a>
           </p>
         </div>
       </div>
+      <div className="calendar-container">
+        <h5 className="calendar-label">Свободные даты:</h5>
+        <Calendar
+          onChange={setDate}
+          value={date}
+          className="custom-calendar"
+          tileClassName={({ date, view }) =>
+            view === "month" && isAvailable(date) ? "available-date" : "unavailable-date"
+          }
+          tileDisabled={({ date }) => !isAvailable(date)}
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default ContactLinks;

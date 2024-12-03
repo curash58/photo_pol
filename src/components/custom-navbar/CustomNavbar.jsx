@@ -56,9 +56,9 @@ const CustomNavbar = () => {
           <Nav.Link href="/portfolio">ПОРТФОЛИО</Nav.Link>
           <Nav.Link href="/price">ЦЕНЫ</Nav.Link>
           <Nav.Link href="/about">ОБ АВТОРЕ</Nav.Link>
-          <Nav.Link href="/contacts">КОНТАКТЫ</Nav.Link>
+          <Nav.Link href="/contacts">КОНТАКТЫ И ЗАПИСЬ</Nav.Link>
           {/* Render Админ link only for authenticated users */}
-          {isAuthenticated && <Nav.Link href="/admin">Админ</Nav.Link>}
+          {isAuthenticated && <Nav.Link href="/admin">АДМИН</Nav.Link>}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
