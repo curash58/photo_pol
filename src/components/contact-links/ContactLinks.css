@@ -74,12 +74,21 @@
 }
 
 .custom-calendar .react-calendar__tile--active {
+  background: #ac8d86 !important;
+}
+
+.unavailable-date{
   background: #a76e60 !important;
   color: #fff !important;
 }
 
 .custom-calendar .react-calendar__tile--hover {
-  background: #e8d9d2;
+  background: #dbb09c;
+}
+
+.react-calendar__tile--now{
+  background: #a76e60 !important;
+  color: #fff !important;
 }
 
 .example-dates {
@@ -93,7 +102,18 @@
 }
 
 .example-date-img {
-  margin-left: 0.3rem;
+  margin: 0 0.3rem 0 0.3rem;
   width: 3.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.react-calendar__navigation button {
+  pointer-events: none;
+}
+
+.react-calendar__navigation__arrow{
+  opacity: 0;
+}
+
+.react-calendar__navigation{
+  margin-bottom: 0 !important;
 }

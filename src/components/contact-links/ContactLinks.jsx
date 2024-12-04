@@ -58,16 +58,16 @@ const ContactLinks = () => {
         <div className="example-dates mb-3">
           <div className="example-item">
             <span className="example-date available-date"></span>
-            <span className="example-text">Свободная дата 
+            <span className="example-text">Свободные даты отмечены так 
               <img className="example-date-img" src="./assets/img/11.png" alt="" />
             </span>
           </div>
-          <div className="example-item">
+          {/* <div className="example-item">
             <span className="example-date unavailable-date"></span>
             <span className="example-text">Занятая дата 
             <img className="example-date-img" src="./assets/img/4.png" alt="" />
             </span>
-          </div>
+          </div> */}
         </div>
         <Calendar
           onChange={setDate}
