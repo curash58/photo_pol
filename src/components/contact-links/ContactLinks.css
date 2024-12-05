@@ -106,14 +106,20 @@
   width: 3.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.react-calendar__navigation button {
+
+.react-calendar__navigation__label{
   pointer-events: none;
 }
 
-.react-calendar__navigation__arrow{
+.react-calendar__navigation__next2-button{
   opacity: 0;
+  pointer-events: none;
 }
 
+.react-calendar__navigation__prev2-button{
+  opacity: 0;
+  pointer-events: none;
+}
 .react-calendar__navigation{
   margin-bottom: 0 !important;
 }
