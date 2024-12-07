@@ -1,0 +1,42 @@
+/* Toast container at the bottom center */
+.live-toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1055; /* Ensure it appears above other elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px; /* Add spacing between multiple toasts */
+  }
+  
+  /* Toast animation */
+  .live-toast-container .toast {
+    animation: fade-in 0.5s ease-out, fade-out 0.5s ease-in 2.5s; /* Fade-out starts after 2.5 seconds */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for fade-out animation */
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
