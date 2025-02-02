@@ -15,6 +15,7 @@
     width: 100%; /* Make the image stretch to full width */
     height: 100%; /* Make the image stretch to full height */
     object-fit: cover; /* Cover the entire container, cropping if necessary */
+    object-position: 0% 20%; 
     opacity: 0; /* Start with the image being invisible */
     animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation */
   }
